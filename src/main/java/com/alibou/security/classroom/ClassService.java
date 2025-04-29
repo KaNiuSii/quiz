@@ -3,7 +3,6 @@ package com.alibou.security.classroom;
 
 import com.alibou.security.user.Role;
 import com.alibou.security.user.User;
-import com.alibou.security.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,7 +15,6 @@ public class ClassService {
 
     private final SchoolClassRepository classRepository;
     private final ClassMemberRepository memberRepository;
-    private final UserRepository userRepository;
 
     @Transactional
     public SchoolClass createClass(User teacher, CreateClassRequest request) {

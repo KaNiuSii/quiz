@@ -32,6 +32,7 @@ public class Token {
           length = 1024)
   public String token;
 
+  @Builder.Default
   @Enumerated(EnumType.STRING)
   public TokenType tokenType = TokenType.BEARER;
 

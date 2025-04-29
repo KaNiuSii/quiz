@@ -1,7 +1,6 @@
 
 package com.alibou.security.quiz;
 
-import com.alibou.security.quiz.Quiz;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
